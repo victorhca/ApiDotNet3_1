@@ -25,14 +25,20 @@ namespace BaseApi.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("DeMoeda")
+                    b.Property<string>("DeMoedaCode")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("DeMoedaId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ParaMoeda")
+                    b.Property<string>("ParaMoedaCode")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ParaMoedaId")
+                        .HasColumnType("int");
 
                     b.Property<string>("ProcessSrv")
                         .HasColumnType("nvarchar(max)");

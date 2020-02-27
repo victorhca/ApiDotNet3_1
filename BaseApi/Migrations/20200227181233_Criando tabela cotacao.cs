@@ -2,7 +2,7 @@
 
 namespace BaseApi.Migrations
 {
-    public partial class Criacaotabelacotacao : Migration
+    public partial class Criandotabelacotacao : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -12,8 +12,10 @@ namespace BaseApi.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    DeMoeda = table.Column<string>(nullable: true),
-                    ParaMoeda = table.Column<string>(nullable: true),
+                    DeMoedaCode = table.Column<string>(nullable: true),
+                    DeMoedaId = table.Column<int>(nullable: false),
+                    ParaMoedaCode = table.Column<string>(nullable: true),
+                    ParaMoedaId = table.Column<int>(nullable: false),
                     Valor = table.Column<double>(nullable: false),
                     Email = table.Column<string>(nullable: true),
                     ProcessSrv = table.Column<string>(nullable: true)
