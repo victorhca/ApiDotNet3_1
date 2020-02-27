@@ -10,6 +10,7 @@ namespace BaseApi.Data
     public class DbTesteContext : DbContext
     {
         public DbSet<Documento> Documents { get; set; }
+        public DbSet<Cotacao> Quotations { get; set; }
         public DbTesteContext(DbContextOptions<DbTesteContext> options)
             : base(options) {
         }
